@@ -1,6 +1,6 @@
 # Build Go binary for Linux/Docker
 build:
-	go get; GOOS="linux" go build
+	go get; CGO_ENABLED=0 GOOS="linux" go build
 
 # Used to check docker daemon is attached
 docker:
